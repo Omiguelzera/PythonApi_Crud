@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Contato</title>
     <link rel="stylesheet" href="../Styles/style.css">
+    <style>
+        /* Estilo opcional para mensagens de erro */
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -21,8 +28,13 @@
 
             <button type="submit">Adicionar</button>
         </form>
+        
+        <!-- Elemento para exibir mensagens de erro -->
+        <div id="errorMessage" class="error"></div>
+        
         <a href="../index.html">Voltar ao Menu Principal</a>
     </div>
     <script src="../Js/app.js"></script>
 </body>
 </html>
+

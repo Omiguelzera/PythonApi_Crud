@@ -130,3 +130,12 @@ Sucesso: Indica um sucesso no fluxo.
 
 
 
+![mermaid-ai-diagram-2024-10-02-215922](https://github.com/user-attachments/assets/d01f33fb-3a37-4cad-a0d6-f94d9d6233dd)
+
+
+
+
+
+
+
+

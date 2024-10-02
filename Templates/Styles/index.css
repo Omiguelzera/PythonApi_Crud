@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+.guaxinim-img {
+    display: block; /* Garante que a imagem seja um bloco */
+    margin: 20px auto; /* Centraliza a imagem */
+    max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    opacity: 0.2; /* Define a opacidade da imagem para 20% */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121212; /* Cor de escura */

@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Principal</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Styles/index.css">
 </head>
 <body>
-    <div class="menu">
+    <div class="container">
         <h1>Menu Principal</h1>
-        <ul>
-            <li><a href="contacts.html">1. Gerenciar Contatos</a></li>
-            <li><a href="#" onclick="window.close()">6. Sair</a></li>
+        <ul class="menu">
+            <li><a href="Pages/add_contact.html">Adicionar Contato</a></li>
+            <li><a href="Pages/list_contacts.html">Listar Contatos</a></li>
+            <li><a href="Pages/search_contact.html">Buscar Contato</a></li>
+            <li><a href="Pages/update_contact.html">Atualizar Contato</a></li>
+            <li><a href="Pages/delete_contact.html">Deletar Contato</a></li>
+            <li><a href="#" onclick="window.close();">Sair</a></li>
         </ul>
     </div>
+    <div class="footer">
+        <p>&copy; 2024 Seu Nome</p>
+    </div>
+    <script src="Js/app.js"></script>
 </body>
 </html>

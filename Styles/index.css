@@ -1,8 +1,15 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e9ecef;
+/* Reset básico para garantir uma aparência consistente */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Cor de escura */
+    color: #e0e0e0; /*Texto claro*/
+    line-height: 1.6; /* Melhor espaçamento entre as linhas */
 }
 
 .container {
@@ -12,12 +19,18 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    transition: transform 0.3s; /* Efeito de transformação suave */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Aumenta levemente o contêiner ao passar o mouse */
 }
 
 h1 {
     color: #343a40;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 2em; /* Aumenta o tamanho do título */
 }
 
 .menu {
@@ -32,16 +45,17 @@ h1 {
 .menu a {
     display: block;
     text-decoration: none;
-    padding: 10px;
+    padding: 12px; /* Aumenta o padding para melhor usabilidade */
     background-color: #007bff;
     color: #ffffff;
     text-align: center;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s; /* Efeito de transição suave */
 }
 
 .menu a:hover {
     background-color: #0056b3;
+    transform: translateY(-2px); /* Pequeno efeito de movimento ao passar o mouse */
 }
 
 .footer {
@@ -52,4 +66,30 @@ h1 {
 
 .footer p {
     margin: 5px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px; /* Menor margem em telas pequenas */
+        padding: 15px; /* Menos padding em telas pequenas */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Tamanho menor do título em telas pequenas */
+    }
+
+    .menu a {
+        padding: 10px; /* Ajuste do padding do menu em telas pequenas */
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.2em; /* Tamanho ainda menor em telas muito pequenas */
+    }
+
+    .menu a {
+        padding: 8px; /* Menor padding para links do menu */
+    }
 }
